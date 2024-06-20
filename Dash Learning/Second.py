@@ -17,11 +17,11 @@ df = pd.DataFrame({
 
 fig = px.bar(df, x= "Fruit", y="Amount", color= "City", barmode= 'group')
 fig.update_layout(
-    plot_bgcolor = colors['202020'],
-    paper_bgcolor = colors['202020'],
-    font_color = colors['#7FDBFF']
+    plot_bgcolor = colors['background'],
+    paper_bgcolor = colors['papercolor'],
+    font_color = colors['text']
 )
-app.layout = html.Div( children=[ html.H1('Hello Dash', style={'textAlign': 'center', 'color': colors["text"]}, style= {'backgroundColor': colors["background"]}),
+app.layout = html.Div( children=[ html.H1('Hello Dash', style={'textAlign': 'center', 'color': colors["text"]}),
              html.Div(children='Dash: A web application framework for your data.', style={'textAlign': 'center',  'color': colors['text']}),
     dcc.Graph(
         id ='Second exaples',

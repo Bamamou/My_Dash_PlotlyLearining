@@ -3,14 +3,12 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import pandas as pd
-import numpy as np
 from plotly.subplots import make_subplots
 
 
-t = np.linspace(0, 2*np.pi, 100)
 # Sample DataFrame
 data = {
-'sin(t)': [np.sint(t), np.cos(t), np.tan(t)],
+'A': [1, 2, 0, 4, 5],
 'B': [10,25, 12, 8, 14],
 'C': [20, 10, 22, 40, 24],
 'D': [30, 50, 32, 16, 34]
